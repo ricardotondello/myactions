@@ -5,9 +5,6 @@ on:
         required: true
         type: string
 
-env:
-  TEST: XXXXXXXXXXXX
-
 jobs:
   example_job:
     name: Say something
@@ -16,4 +13,4 @@ jobs:
       - name: step1
         run: echo ${{ inputs.mymessage }}
       - name: environmentV
-        run: echo ${{secrets.TEST}}
+        run: echo ${{secrets.TEST}} test
