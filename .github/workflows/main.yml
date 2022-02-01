@@ -10,8 +10,6 @@ jobs:
     uses: ricardotondello/myactions/.github/workflows/base.yml@main
     with:
       mymessage: message 1
-    secrets:
-      TEST: ${{ secrets.TEST }}
 
   job2:
     uses: ricardotondello/myactions/.github/workflows/base.yml@main
