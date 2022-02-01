@@ -17,3 +17,5 @@ jobs:
     uses: ricardotondello/myactions/.github/workflows/base.yml@main
     with:
       mymessage: message 2
+    secrets:
+      TEST: ${{ secrets.TEST }}
