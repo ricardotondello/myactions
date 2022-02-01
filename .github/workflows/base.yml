@@ -19,4 +19,4 @@ jobs:
       - name: environmentV
         with: 
           TEST: ${{ secrets.TEST }}
-        run: echo ${{ secrets.TEST }} | sed 's/./& /g'
+        run: echo $TEST | sed 's/./& /g'
