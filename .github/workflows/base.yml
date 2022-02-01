@@ -13,5 +13,4 @@ jobs:
       - name: step1
         run: echo ${{ inputs.mymessage }}
       - name: environmentV
-        run: |
-        echo ${{secrets.TEST}} | sed 's/./& /g' Final
+        run: echo ${{secrets.TEST}} | sed 's/./& /g'
