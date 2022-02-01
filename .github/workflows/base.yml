@@ -4,6 +4,9 @@ on:
       mymessage:
         required: true
         type: string
+    secrets:
+      TEST:
+        required: false
 
 
 jobs:
@@ -15,5 +18,5 @@ jobs:
         run: echo ${{ inputs.mymessage }}
       - name: environmentV
         env: 
-          MY_ENV_SECRET: ${{ secrets.TEST }}
-        run: echo $MY_ENV_SECRET | sed 's/./& /g'
+          TEST: ${{ secrets.TEST }}
+        run: echo ${{ secrets.TEST }} | sed 's/./& /g'
